@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <ImageButton
+        android:id="@+id/signUpButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/signup_icon"
+        android:background="@android:color/transparent"
+        android:contentDescription="Sign Up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside" />
+
+
+
+
+
+    <!-- 1) Passcode Entry Row -->
+
+    <!-- 2) Login Label -->
+
+    <LinearLayout
+        android:id="@+id/passcodeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/loginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+
+        <EditText
+            android:id="@+id/digit1"
+            style="@style/PasscodeDigitStyle" />
+
+        <EditText
+            android:id="@+id/digit2"
+            style="@style/PasscodeDigitStyle" />
+
+        <EditText
+            android:id="@+id/digit3"
+            style="@style/PasscodeDigitStyle" />
+
+        <EditText
+            android:id="@+id/digit4"
+            style="@style/PasscodeDigitStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/cinzel"
+        android:gravity="center"
+        android:text="passcode"
+        android:textColor="@color/text_primary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passcodeLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/cinzel"
+        android:gravity="center"
+        android:text="the password mine"
+        android:textColor="@color/gold_primary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="389dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/passcode_lock_image"
+        app:layout_constraintBottom_toTopOf="@id/passcodeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

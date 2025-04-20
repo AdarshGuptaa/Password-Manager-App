@@ -1,9 +1,34 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PasswordManager" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+<resources>
+    <!-- Base application theme for night mode -->
+    <style name="Theme.PasswordManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary color is Gold -->
+        <item name="colorPrimary">#D4AF37</item>
+        <item name="colorOnPrimary">#1F1F1F</item>
+        <item name="colorPrimaryContainer">#D4AF37</item>
+        <item name="colorOnPrimaryContainer">#000000</item>
 
-    <style name="Theme.PasswordManager" parent="Base.Theme.PasswordManager" />
+        <!-- Secondary color is darker gold -->
+        <item name="colorSecondary">#CBA135</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Background is dark grey -->
+        <item name="backgroundColor">#1F1F1F</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+
+        <!-- Surface background for cards and dialogs -->
+        <item name="colorSurface">#1F1F1F</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Error colors -->
+        <item name="colorError">#D32F2F</item>
+        <item name="colorOnError">#FFFFFF</item>
+
+        <!-- Customize status bar and other system UI elements -->
+        <item name="android:statusBarColor">#1F1F1F</item>
+        <item name="android:windowBackground">#1F1F1F</item>
+
+        <!-- Customize button styles and text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#CBA135</item>
+    </style>
 </resources>
